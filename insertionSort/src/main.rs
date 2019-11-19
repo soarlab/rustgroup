@@ -51,7 +51,7 @@ fn same_elems(arr1: &[u32], arr2: &[u32]) -> bool {
 }
 
 fn correct(srtd: &[u32], orig: &[u32]) -> bool {
-    sorted(srtd) && same_elems(srtd, orig)
+    srtd.len() == orig.len() && sorted(srtd) && same_elems(srtd, orig)
 }
 
 
